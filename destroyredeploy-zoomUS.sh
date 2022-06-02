@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
 #
-#   --------------------------------------------------------                                         
-#  |    eeeee eeee eeeee eeeee eeeee  eeeee e    e          |
-#  |    8   8 8    8   "   8   8   8  8  88 8    8          |
-#  |    8e  8 8eee 8eeee   8e  8eee8e 8   8 8eeee8          |
-#  |    88  8 88      88   88  88   8 8   8   88            |
-#  |    88ee8 88ee 8ee88   88  88   8 8eee8   88            |
-#  |                                                        |
-#  |                                                        |
-#  |    eeeee  eeee eeeee eeee eeeee e     eeeee e    e     |
-#  |    8   8  8    8   8 8    8   8 8     8  88 8    8     |
-#  |    8eee8e 8eee 8e  8 8eee 8eee8 8e    8   8 8eeee8     |
-#  |    88   8 88   88  8 88   88    88    8   8   88       |
-#  |    88   8 88ee 88ee8 88ee 88    88eee 8eee8   88       |
-#  |                                                        |
-#  |  ~ update MacOS applications with extreme prejudice ~  |
-#  |                                                        |
-#  |                 github.com/0xclaire/destroy-redeploy   |
-#   --------------------------------------------------------
+#   ---------------------------------------------------------                                         
+#  |       eeeee eeee eeeee eeeee eeeee  eeeee e    e        |
+#  |       8   8 8    8   "   8   8   8  8  88 8    8        |
+#  |       8e  8 8eee 8eeee   8e  8eee8e 8   8 8eeee8        |
+#  |       88  8 88      88   88  88   8 8   8   88          |
+#  |       88ee8 88ee 8ee88   88  88   8 8eee8   88          |
+#  |                                                         |                                                 |
+#  |    eeeee  eeee eeeee eeee eeeee e     eeeee e    e      |
+#  |    8   8  8    8   8 8    8   8 8     8  88 8    8      |
+#  |    8eee8e 8eee 8e  8 8eee 8eee8 8e    8   8 8eeee8      |
+#  |    88   8 88   88  8 88   88    88    8   8   88        |
+#  |    88   8 88ee 88ee8 88ee 88    88eee 8eee8   88  v1.0  |
+#  |                                                         |
+#  |                                                         |
+#  |  ~ update MacOS applications with extreme prejudice ~   |
+#  |                                                         |
+#  |                   github.com/0xclaire/destroy-redeploy  |
+#   ---------------------------------------------------------
 #
 # quit application and tie up any loose ends
 osascript -e 'quit app "zoom.us.app"'
