@@ -19,8 +19,9 @@
 #  |                 github.com/0xclaire/destroy-redeploy   |
 #   --------------------------------------------------------
 #
-# quit application
+# quit application and tie up any loose ends
 osascript -e 'quit app "zoom.us.app"'
+killall "zoom.us"
 #
 # change working directory
 cd /Applications
