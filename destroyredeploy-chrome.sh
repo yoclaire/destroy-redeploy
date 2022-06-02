@@ -20,41 +20,47 @@
 #   ---------------------------------------------------------
 #
 # quit application and tie up any loose ends
-osascript -e 'quit app "zoom.us.app"'
-killall "zoom.us"
+osascript -e 'quit app "Google Chrome.app"'
+killall "Google Chrome"
 #
 # change working directory
 cd /Applications
 #
 # KILL IT WITH FIRE
-rm -rf "zoom.us.app"
+rm -rf "Google Chrome.app"
 #
 # go back to root dir
 cd ..
 #
 # make temp folder for downloads
-mkdir "/tmp/zoomus"
+mkdir "/tmp/chrome"
 #
 # change working directory
-cd "/tmp/zoomus"
+cd "/tmp/chrome"
 #
 # check if running on apple silicon or intel cpu
 if [[ $(uname -m) == 'arm64' ]]; then
   echo Apple Silicon Detected
-  # download latest installer pkg for apple silicon 
-curl -L -o "/tmp/zoomus/zoomusInstallerFull.pkg" "https://zoom.us/client/latest/zoomusInstallerFull.pkg?archType=arm64"
+  # download latest installer dmg for apple silicon 
+curl -L -o "/tmp/chrome/googlechrome.dmg" "https://dl.google.com/chrome/mac/universal/stable/CHFA/googlechrome.dmg"
 elif [[ $(uname -m) == 'x86_64' ]]; then
   echo Intel CPU Detected
-  # download latest installer pkg for intel-based cpu 
-curl -L -o "/tmp/zoomus/zoomusInstallerFull.pkg" "https://zoom.us/client/latest/zoomusInstallerFull.pkg"
+  # download latest installer dmg for intel-based cpu 
+curl -L -o "/tmp/chrome/googlechrome.dmg" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
 fi
 #
-# install zoom.us
-sudo /usr/sbin/installer -pkg zoomusInstallerFull.pkg -target /
+# mount chrome disk image
+hdiutil attach "/tmp/chrome/googlechrome.dmg"
+#
+# install chrome from disk image 
+ditto -rsrc "/Volumes/Google Chrome/Google Chrome.app" "/Applications/Google Chrome.app"
+#
+# unmount chrome disk image
+hdiutil detach "/Volumes/Google Chrome"
 #
 # clean out the temp dir
-sudo rm -rf "/tmp/zoomus"
+sudo rm -rf "/tmp/chrome"
 #
 # bless app
-xattr -rc "/Applications/zoom.us.app"
+xattr -rc "/Applications/Google Chrome.app"
 #
