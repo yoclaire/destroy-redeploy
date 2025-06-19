@@ -1,0 +1,60 @@
+MIT License
+
+Copyright (c) 2024 Claire (@0xclaire)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+DISCLAIMER AND WARNING:
+
+This software performs destructive operations on macOS applications by design.
+The "destroy-redeploy" process completely removes and reinstalls applications,
+which may result in:
+
+- Loss of application preferences and settings
+- Loss of application data not backed up by the tool
+- Temporary unavailability of applications during the process
+- Potential system instability if interrupted during critical operations
+
+USERS ARE STRONGLY ADVISED TO:
+
+1. Backup all important data before using this software
+2. Test the software in non-production environments first
+3. Understand the implications of complete application removal
+4. Ensure they have administrator privileges and stable internet connection
+5. Read all prompts and confirmations carefully before proceeding
+
+The authors and contributors of this software assume NO RESPONSIBILITY for:
+
+- Data loss of any kind
+- System damage or instability
+- Lost productivity or business disruption
+- Any other direct or indirect damages resulting from use of this software
+
+USE THIS SOFTWARE AT YOUR OWN RISK AND DISCRETION.
+
+This software is intended for advanced users, system administrators, and
+developers who understand the implications of forceful application
+reinstallation. It is not recommended for casual users or those unfamiliar
+with macOS system administration.
+
+By using this software, you acknowledge that you have read, understood, and
+agreed to these terms and accept full responsibility for any consequences
+of its use.
